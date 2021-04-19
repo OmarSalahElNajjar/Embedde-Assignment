@@ -4,13 +4,16 @@ struct student
 {
     char name[50];
     int student_id;
-    int day, month, year;
+    int day;
+    int month;
+    int year;
     int score;
     struct student*next;
 };
 int main()
 {
     printf("Welcome to our Embedded assignment\n");
+
     struct student student1;
     printf("enter the name of the student\n");
     scanf("%s", &student1.name);
